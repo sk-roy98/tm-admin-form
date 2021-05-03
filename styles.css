@@ -1,0 +1,32 @@
+body{
+    display: flex;
+    justify-content: center;
+}
+.formValidation{
+    background-color: rgb(206, 204, 204);
+    width: 30rem;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+.input{
+    width: fit-content;
+    padding: 5px;
+    margin: 8px 5px;
+}
+.box{
+    width: 17rem;
+    margin : 5px 0;
+}
+.button{
+    width:7rem;
+    padding: 7px 5px;
+    margin: 1.5rem 0;
+    display: block;
+}
+.error{
+    color:tomato;
+    padding-bottom: 11px;
+    float: left;
+    width:100%;
+}
