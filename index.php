@@ -5,8 +5,7 @@ $mypass = "1234";
 $admmail = "qwe@123";
 $admpass = "234";
     if(isset($_POST["login"])){
-        $name = $_POST['name'];
-        $address = $_POST['address'];
+ 
         $email = $_POST['email'];
         $password =  $_POST['password'];
         if($email == $mymail and $password == $mypass) {
@@ -20,8 +19,6 @@ $admpass = "234";
             $invalid = ("email or password is invalid <br> click here to <a href= 'index.php' >try again</a>");
         }
         if($email == $admmail and $password ==  $admpass){
-            $_SESSION['name'] = $name;
-            $_SESSION['address'] = $address;
             $_SESSION['email'] = $email;
             header("location: admin.php");
         }
@@ -41,11 +38,6 @@ $admpass = "234";
 <body>
     <div class="formValidation">
     <form action=" " method="post" enctype="multipart/form-data" >
-        <label for="name">Name</label><br>
-        <input  class="input box" id="name" name="name"/><br>
-
-        <label for="address">address</label><br>
-        <input  class="input box" type="address" id="address" name="address"/><br>
 
         <label for="mail">Email</label><br>
         <input  class="input box" type="email" id="mail" name="email"/><br>
@@ -55,17 +47,11 @@ $admpass = "234";
 
         <input class="button" type="submit" name = "login" value="login"/>
         <?php
-        
         if(isset($invalid)){
             echo "<div class='error'>" . $invalid . "</div>";
         }
-        
         ?>
     </form>
     </div>
 </body>
 
-<?
-    $
-
-?>

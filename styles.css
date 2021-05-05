@@ -30,3 +30,10 @@ body{
     float: left;
     width:100%;
 }
+.welcome__container{
+    background-color: rgb(175, 174, 174);
+    width: 30rem;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
